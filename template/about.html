@@ -1,0 +1,24 @@
+{% extends 'base.html' %}'
+{% block "body" %}
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="about_taital">
+                <h4 class="about_text">About</h4>
+                <h1 class="highest_text">The Highest provide health care</h1>
+                <p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposedIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
+                <div class="read_bt"><a href="/about">Read More</a></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image_2" href="/about">{% load static %}<img src="{% static 'images\img-2.png' %}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about section end -->
+      {% endblock %}
+     

@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% block "body" %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+    />
+    <link
+      href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-2.1.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+
+    <style>
+      .inputstl {
+        padding: 9px;
+        border: solid 1px #b3ffb3;
+        outline: 0;
+    
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Book Appointment</h1>
+      <form class="form-horizontal" role="form" action="/appointment" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name1" class="col-sm-2 control-label">Name:</label>
+          <div class="col-sm-5 input-group">
+            <input
+              type="text"
+              class="form-control inputstl"
+              id="name1"
+              placeholder="Enter Your Full Name"
+              name='name'
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="gender1" class="col-sm-2 control-label">Gender:</label>
+          <div class="col-sm-5 input-group">
+            <select class="form-select inputstl" aria-label="Default select example" name="gender">
+              
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email1" class="col-sm-2 control-label">Email:</label>
+          <div class="col-sm-5 input-group">
+            <input
+              type="email"
+              class="form-control inputstl"
+              id="email1"
+              placeholder="Enter Email"
+              name='email'
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dtpickerdemo" class="col-sm-2 control-label"
+            >Date/time of birth:</label
+          >
+          <div class="col-sm-4 input-group date" id="dtpickerdemo">
+            <input type="text" class="form-control inputstl" name='date_time'/>
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+
+        
+
+        <div class="form-group">
+         
+        </div>
+
+        <div class="form-group">
+          
+          </div>
+        </div>
+        <div class="form-group">
+          
+          <div class="col-sm-offset-3 col-sm-2"><div class="col mb-5">
+            <button type="submit" class="btn btn-lg btn-block btn-success">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      $(function () {
+        $("#dtpickerdemo").datetimepicker();
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock %}
