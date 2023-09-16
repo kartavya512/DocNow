@@ -1,5 +1,23 @@
 # DocNow
 
+Welcome to the Doctor Consultancy web application project. This application allows patients to connect with healthcare professionals through video calls, manage appointments, and make secure payments. It was developed using Django, HTML, CSS, JavaScript and Zegocloud.
+
+## Features
+
+- **Video Consultations**: Schedule and participate in real-time video consultations with healthcare professionals.
+- **Appointment Management**: Easily manage and track your medical appointments.
+- **Secure Payments**: Make payments securely within the application.
+- **User Authentication**: Protect patient and doctor information with user authentication.
+- **Responsive UI**: Ensure a seamless experience across devices with a responsive user interface.
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone this repository to your local machine.
+
+
+
 Home Page :
 
 ![image](https://github.com/kartavya512/DocNow/assets/102538285/c8c672e9-f8e7-4202-a548-b57669454bac)
