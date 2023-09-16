@@ -15,6 +15,11 @@ Welcome to the Doctor Consultancy web application project. This application allo
 To run this project locally, follow these steps:
 
 1. Clone this repository to your local machine.
+2. Create a virtual environment  |  py -m venv venv
+3. Install django | py -m pip install django
+4. To run the server | py manage.py
+
+
 
 
 
